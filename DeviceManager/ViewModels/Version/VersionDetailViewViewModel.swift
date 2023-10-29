@@ -1,5 +1,5 @@
 //
-//  VersionRowViewViewModel.swift
+//  VersionDetailViewViewModel.swift
 //  DeviceManager
 //
 //  Created by Leo Ho on 2023/10/29.
@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-class VersionRowViewViewModel {
+class VersionDetailViewViewModel {
     
     private var firmware: DevicesInformation.Firmware
     
@@ -36,7 +36,7 @@ class VersionRowViewViewModel {
         }
     }
     
-    /// Use ``DevicesInformation.Firmware`` to initialize ``VersionRowViewViewModel``
+    /// Use ``DevicesInformation.Firmware`` to initialize ``VersionDetailViewViewModel``
     init(firmware: DevicesInformation.Firmware) {
         self.firmware = firmware
     }

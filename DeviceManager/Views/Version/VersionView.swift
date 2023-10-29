@@ -64,13 +64,9 @@ private extension VersionView {
         Section(signed ? "Signed Version" : "Unsigned Version") {
             ForEach(firmwares, id: \.buildid) { firmware in
                 NavigationLink {
-                    VersionRowView(firmware: firmware)
+                    VersionDetailView(firmware: firmware)
                 } label: {
-                    HStack {
-                        Text("\(UIDevice.current.systemName) \(firmware.version) (\(firmware.buildid))")
-                        Image(systemIcon: signed ? .checkmarkSealFill : .xmarkSealFill)
-                            .foregroundStyle(signed ? .green : .red)
-                    }
+                    VersionRowView(firmware: firmware, signed: signed)
                 }
             }
         }

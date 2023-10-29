@@ -20,8 +20,9 @@
 		D05A07112AEE5AE800F87741 /* DeviceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05A07102AEE5AE800F87741 /* DeviceManager.swift */; };
 		D05A07142AEE809700F87741 /* VersionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05A07132AEE809700F87741 /* VersionView.swift */; };
 		D05A07172AEE80D700F87741 /* VersionViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05A07162AEE80D700F87741 /* VersionViewViewModel.swift */; };
-		D05A07192AEEA8B800F87741 /* VersionRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05A07182AEEA8B800F87741 /* VersionRowView.swift */; };
-		D05A071B2AEEAD1600F87741 /* VersionRowViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05A071A2AEEAD1600F87741 /* VersionRowViewViewModel.swift */; };
+		D05A07192AEEA8B800F87741 /* VersionDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05A07182AEEA8B800F87741 /* VersionDetailView.swift */; };
+		D05A071B2AEEAD1600F87741 /* VersionDetailViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05A071A2AEEAD1600F87741 /* VersionDetailViewViewModel.swift */; };
+		D0B743832AEEDA3C00098286 /* VersionRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B743822AEEDA3C00098286 /* VersionRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,8 +59,9 @@
 		D05A07102AEE5AE800F87741 /* DeviceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceManager.swift; sourceTree = "<group>"; };
 		D05A07132AEE809700F87741 /* VersionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionView.swift; sourceTree = "<group>"; };
 		D05A07162AEE80D700F87741 /* VersionViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionViewViewModel.swift; sourceTree = "<group>"; };
-		D05A07182AEEA8B800F87741 /* VersionRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionRowView.swift; sourceTree = "<group>"; };
-		D05A071A2AEEAD1600F87741 /* VersionRowViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionRowViewViewModel.swift; sourceTree = "<group>"; };
+		D05A07182AEEA8B800F87741 /* VersionDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionDetailView.swift; sourceTree = "<group>"; };
+		D05A071A2AEEAD1600F87741 /* VersionDetailViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionDetailViewViewModel.swift; sourceTree = "<group>"; };
+		D0B743822AEEDA3C00098286 /* VersionRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -210,7 +212,8 @@
 			isa = PBXGroup;
 			children = (
 				D05A07132AEE809700F87741 /* VersionView.swift */,
-				D05A07182AEEA8B800F87741 /* VersionRowView.swift */,
+				D05A07182AEEA8B800F87741 /* VersionDetailView.swift */,
+				D0B743822AEEDA3C00098286 /* VersionRowView.swift */,
 			);
 			path = Version;
 			sourceTree = "<group>";
@@ -219,7 +222,7 @@
 			isa = PBXGroup;
 			children = (
 				D05A07162AEE80D700F87741 /* VersionViewViewModel.swift */,
-				D05A071A2AEEAD1600F87741 /* VersionRowViewViewModel.swift */,
+				D05A071A2AEEAD1600F87741 /* VersionDetailViewViewModel.swift */,
 			);
 			path = Version;
 			sourceTree = "<group>";
@@ -368,12 +371,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D05A07192AEEA8B800F87741 /* VersionRowView.swift in Sources */,
+				D05A07192AEEA8B800F87741 /* VersionDetailView.swift in Sources */,
 				D05A07112AEE5AE800F87741 /* DeviceManager.swift in Sources */,
 				D05A07172AEE80D700F87741 /* VersionViewViewModel.swift in Sources */,
-				D05A071B2AEEAD1600F87741 /* VersionRowViewViewModel.swift in Sources */,
+				D05A071B2AEEAD1600F87741 /* VersionDetailViewViewModel.swift in Sources */,
 				D05A070C2AEE4F4B00F87741 /* DevicesInformation.swift in Sources */,
 				D05A07062AEE488300F87741 /* NetworkManager.swift in Sources */,
+				D0B743832AEEDA3C00098286 /* VersionRowView.swift in Sources */,
 				D05A06D72AEE477C00F87741 /* HomeView.swift in Sources */,
 				D05A06D52AEE477C00F87741 /* DeviceManagerApp.swift in Sources */,
 				D05A07142AEE809700F87741 /* VersionView.swift in Sources */,
