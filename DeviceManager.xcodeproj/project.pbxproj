@@ -22,6 +22,9 @@
 		D05A07172AEE80D700F87741 /* VersionViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05A07162AEE80D700F87741 /* VersionViewViewModel.swift */; };
 		D05A07192AEEA8B800F87741 /* VersionDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05A07182AEEA8B800F87741 /* VersionDetailView.swift */; };
 		D05A071B2AEEAD1600F87741 /* VersionDetailViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05A071A2AEEAD1600F87741 /* VersionDetailViewViewModel.swift */; };
+		D0AB18282AF009F300A02B17 /* Collections in Frameworks */ = {isa = PBXBuildFile; productRef = D0AB18272AF009F300A02B17 /* Collections */; };
+		D0AB182A2AF009F300A02B17 /* DequeModule in Frameworks */ = {isa = PBXBuildFile; productRef = D0AB18292AF009F300A02B17 /* DequeModule */; };
+		D0AB182C2AF009F300A02B17 /* OrderedCollections in Frameworks */ = {isa = PBXBuildFile; productRef = D0AB182B2AF009F300A02B17 /* OrderedCollections */; };
 		D0B743832AEEDA3C00098286 /* VersionRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B743822AEEDA3C00098286 /* VersionRowView.swift */; };
 /* End PBXBuildFile section */
 
@@ -69,7 +72,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0AB18282AF009F300A02B17 /* Collections in Frameworks */,
 				D05A07092AEE493700F87741 /* SwiftHelpers in Frameworks */,
+				D0AB182C2AF009F300A02B17 /* OrderedCollections in Frameworks */,
+				D0AB182A2AF009F300A02B17 /* DequeModule in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +259,9 @@
 			name = DeviceManager;
 			packageProductDependencies = (
 				D05A07082AEE493700F87741 /* SwiftHelpers */,
+				D0AB18272AF009F300A02B17 /* Collections */,
+				D0AB18292AF009F300A02B17 /* DequeModule */,
+				D0AB182B2AF009F300A02B17 /* OrderedCollections */,
 			);
 			productName = DeviceManager;
 			productReference = D05A06D12AEE477C00F87741 /* DeviceManager.app */;
@@ -328,6 +337,7 @@
 			mainGroup = D05A06C82AEE477C00F87741;
 			packageReferences = (
 				D05A07072AEE493600F87741 /* XCRemoteSwiftPackageReference "SwiftHelpers" */,
+				D0AB18262AF0094700A02B17 /* XCRemoteSwiftPackageReference "swift-collections" */,
 			);
 			productRefGroup = D05A06D22AEE477C00F87741 /* Products */;
 			projectDirPath = "";
@@ -747,6 +757,14 @@
 				minimumVersion = 0.0.4;
 			};
 		};
+		D0AB18262AF0094700A02B17 /* XCRemoteSwiftPackageReference "swift-collections" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-collections.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.5;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -754,6 +772,21 @@
 			isa = XCSwiftPackageProductDependency;
 			package = D05A07072AEE493600F87741 /* XCRemoteSwiftPackageReference "SwiftHelpers" */;
 			productName = SwiftHelpers;
+		};
+		D0AB18272AF009F300A02B17 /* Collections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D0AB18262AF0094700A02B17 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = Collections;
+		};
+		D0AB18292AF009F300A02B17 /* DequeModule */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D0AB18262AF0094700A02B17 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = DequeModule;
+		};
+		D0AB182B2AF009F300A02B17 /* OrderedCollections */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D0AB18262AF0094700A02B17 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			productName = OrderedCollections;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

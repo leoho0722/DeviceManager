@@ -7,6 +7,7 @@
 
 import SwiftUI
 
+import Collections
 import SwiftHelpers
 
 struct VersionView: View {
@@ -60,13 +61,17 @@ private extension VersionView {
     }
     
     @ViewBuilder
-    func buildVersionSection(firmwares: [DevicesInformation.Firmware], signed: Bool) -> some View {
+    func buildVersionSection(firmwares: OrderedDictionary<String, [DevicesInformation.Firmware]>, signed: Bool) -> some View {
         Section(signed ? "Signed Version" : "Unsigned Version") {
-            ForEach(firmwares, id: \.buildid) { firmware in
-                NavigationLink {
-                    VersionDetailView(firmware: firmware)
-                } label: {
-                    VersionRowView(firmware: firmware, signed: signed)
+            ForEach(firmwares.keys, id: \.self) { version in
+                DisclosureGroup(version) {
+                    ForEach(firmwares[version]!, id: \.buildid) { firmware in
+                        NavigationLink {
+                            VersionDetailView(firmware: firmware)
+                        } label: {
+                            VersionRowView(firmware: firmware, signed: signed)
+                        }
+                    }
                 }
             }
         }
