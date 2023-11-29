@@ -23,8 +23,12 @@ final class NetworkManager: NSObject {
             throw URLError(.badServerResponse)
         }
         
-        guard (200 ... 299).contains(httpResponse.statusCode) else {
-            throw HTTP.HTTPStatus.badRequest
+        guard let status = HTTP.HTTPStatus(rawValue: httpResponse.statusCode) else {
+            throw HTTP.HTTPStatus.unknown
+        }
+        
+        guard status == .ok else {
+            throw status
         }
         
         do {

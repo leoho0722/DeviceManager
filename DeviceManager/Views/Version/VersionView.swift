@@ -50,11 +50,10 @@ private extension VersionView {
     func buildAboutThisDeviceSection(manager: DeviceManager) -> some View {
         Section {
             NavigationLink {
-                Text("\(manager.device.name)")
+                AboutThisDeviceView(manager: manager)
             } label: {
                 Text("\(manager.device.name)")
             }
-            
         } header: {
             Text("About this device")
         }

@@ -22,6 +22,8 @@
 		D05A07172AEE80D700F87741 /* VersionViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05A07162AEE80D700F87741 /* VersionViewViewModel.swift */; };
 		D05A07192AEEA8B800F87741 /* VersionDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05A07182AEEA8B800F87741 /* VersionDetailView.swift */; };
 		D05A071B2AEEAD1600F87741 /* VersionDetailViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05A071A2AEEAD1600F87741 /* VersionDetailViewViewModel.swift */; };
+		D082F7D22B171F2F006753D7 /* AboutThisDeviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D082F7D12B171F2F006753D7 /* AboutThisDeviceView.swift */; };
+		D082F7D52B172624006753D7 /* AboutThisDeviceViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D082F7D42B172624006753D7 /* AboutThisDeviceViewViewModel.swift */; };
 		D0AB18282AF009F300A02B17 /* Collections in Frameworks */ = {isa = PBXBuildFile; productRef = D0AB18272AF009F300A02B17 /* Collections */; };
 		D0AB182A2AF009F300A02B17 /* DequeModule in Frameworks */ = {isa = PBXBuildFile; productRef = D0AB18292AF009F300A02B17 /* DequeModule */; };
 		D0AB182C2AF009F300A02B17 /* OrderedCollections in Frameworks */ = {isa = PBXBuildFile; productRef = D0AB182B2AF009F300A02B17 /* OrderedCollections */; };
@@ -64,6 +66,8 @@
 		D05A07162AEE80D700F87741 /* VersionViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionViewViewModel.swift; sourceTree = "<group>"; };
 		D05A07182AEEA8B800F87741 /* VersionDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionDetailView.swift; sourceTree = "<group>"; };
 		D05A071A2AEEAD1600F87741 /* VersionDetailViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionDetailViewViewModel.swift; sourceTree = "<group>"; };
+		D082F7D12B171F2F006753D7 /* AboutThisDeviceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutThisDeviceView.swift; sourceTree = "<group>"; };
+		D082F7D42B172624006753D7 /* AboutThisDeviceViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutThisDeviceViewViewModel.swift; sourceTree = "<group>"; };
 		D0B743822AEEDA3C00098286 /* VersionRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -167,6 +171,7 @@
 		D05A07002AEE47CB00F87741 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				D082F7D02B171F18006753D7 /* AboutThisDevice */,
 				D05A07122AEE806E00F87741 /* Version */,
 				D05A06D62AEE477C00F87741 /* HomeView.swift */,
 			);
@@ -176,6 +181,7 @@
 		D05A07012AEE47D200F87741 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				D082F7D32B17260B006753D7 /* AboutThisDevice */,
 				D05A07152AEE80BE00F87741 /* Version */,
 			);
 			path = ViewModels;
@@ -239,6 +245,22 @@
 				D05A07102AEE5AE800F87741 /* DeviceManager.swift */,
 			);
 			path = Device;
+			sourceTree = "<group>";
+		};
+		D082F7D02B171F18006753D7 /* AboutThisDevice */ = {
+			isa = PBXGroup;
+			children = (
+				D082F7D12B171F2F006753D7 /* AboutThisDeviceView.swift */,
+			);
+			path = AboutThisDevice;
+			sourceTree = "<group>";
+		};
+		D082F7D32B17260B006753D7 /* AboutThisDevice */ = {
+			isa = PBXGroup;
+			children = (
+				D082F7D42B172624006753D7 /* AboutThisDeviceViewViewModel.swift */,
+			);
+			path = AboutThisDevice;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -386,7 +408,9 @@
 				D05A07172AEE80D700F87741 /* VersionViewViewModel.swift in Sources */,
 				D05A071B2AEEAD1600F87741 /* VersionDetailViewViewModel.swift in Sources */,
 				D05A070C2AEE4F4B00F87741 /* DevicesInformation.swift in Sources */,
+				D082F7D22B171F2F006753D7 /* AboutThisDeviceView.swift in Sources */,
 				D05A07062AEE488300F87741 /* NetworkManager.swift in Sources */,
+				D082F7D52B172624006753D7 /* AboutThisDeviceViewViewModel.swift in Sources */,
 				D0B743832AEEDA3C00098286 /* VersionRowView.swift in Sources */,
 				D05A06D72AEE477C00F87741 /* HomeView.swift in Sources */,
 				D05A06D52AEE477C00F87741 /* DeviceManagerApp.swift in Sources */,
