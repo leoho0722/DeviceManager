@@ -34,7 +34,7 @@ struct VersionDetailView: View {
                 Text("Release Date: \(vm.format(date: firmware.releasedate))")
                 HStack {
                     Text("Signed State: \(firmware.signed ? "Signed" : "Unsigned")")
-                    Image(systemIcon: firmware.signed ? .checkmarkSealFill : .xmarkSealFill)
+                    Image(symbols: firmware.signed ? .checkmarkSealFill : .xmarkSealFill)
                         .foregroundStyle(firmware.signed ? .green : .red)
                 }
             }

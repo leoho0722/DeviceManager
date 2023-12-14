@@ -18,7 +18,7 @@ struct VersionRowView: View {
     var body: some View {
         HStack {
             Text("\(UIDevice.current.systemName) \(firmware.version) (\(firmware.buildid))")
-            Image(systemIcon: signed ? .checkmarkSealFill : .xmarkSealFill)
+            Image(symbols: signed ? .checkmarkSealFill : .xmarkSealFill)
                 .foregroundStyle(signed ? .green : .red)
         }
     }

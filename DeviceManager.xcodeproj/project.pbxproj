@@ -15,7 +15,6 @@
 		D05A06F12AEE477E00F87741 /* DeviceManagerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05A06F02AEE477E00F87741 /* DeviceManagerUITests.swift */; };
 		D05A06F32AEE477E00F87741 /* DeviceManagerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05A06F22AEE477E00F87741 /* DeviceManagerUITestsLaunchTests.swift */; };
 		D05A07062AEE488300F87741 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05A07052AEE488300F87741 /* NetworkManager.swift */; };
-		D05A07092AEE493700F87741 /* SwiftHelpers in Frameworks */ = {isa = PBXBuildFile; productRef = D05A07082AEE493700F87741 /* SwiftHelpers */; };
 		D05A070C2AEE4F4B00F87741 /* DevicesInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05A070B2AEE4F4B00F87741 /* DevicesInformation.swift */; };
 		D05A07112AEE5AE800F87741 /* DeviceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05A07102AEE5AE800F87741 /* DeviceManager.swift */; };
 		D05A07142AEE809700F87741 /* VersionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05A07132AEE809700F87741 /* VersionView.swift */; };
@@ -24,9 +23,10 @@
 		D05A071B2AEEAD1600F87741 /* VersionDetailViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05A071A2AEEAD1600F87741 /* VersionDetailViewViewModel.swift */; };
 		D082F7D22B171F2F006753D7 /* AboutThisDeviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D082F7D12B171F2F006753D7 /* AboutThisDeviceView.swift */; };
 		D082F7D52B172624006753D7 /* AboutThisDeviceViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D082F7D42B172624006753D7 /* AboutThisDeviceViewViewModel.swift */; };
-		D0AB18282AF009F300A02B17 /* Collections in Frameworks */ = {isa = PBXBuildFile; productRef = D0AB18272AF009F300A02B17 /* Collections */; };
-		D0AB182A2AF009F300A02B17 /* DequeModule in Frameworks */ = {isa = PBXBuildFile; productRef = D0AB18292AF009F300A02B17 /* DequeModule */; };
-		D0AB182C2AF009F300A02B17 /* OrderedCollections in Frameworks */ = {isa = PBXBuildFile; productRef = D0AB182B2AF009F300A02B17 /* OrderedCollections */; };
+		D09BE1F82B2B5D61005645EA /* Collections in Frameworks */ = {isa = PBXBuildFile; productRef = D09BE1F72B2B5D61005645EA /* Collections */; };
+		D09BE1FA2B2B5D61005645EA /* DequeModule in Frameworks */ = {isa = PBXBuildFile; productRef = D09BE1F92B2B5D61005645EA /* DequeModule */; };
+		D09BE1FC2B2B5D61005645EA /* OrderedCollections in Frameworks */ = {isa = PBXBuildFile; productRef = D09BE1FB2B2B5D61005645EA /* OrderedCollections */; };
+		D09BE1FF2B2B5DA2005645EA /* SwiftHelpers in Frameworks */ = {isa = PBXBuildFile; productRef = D09BE1FE2B2B5DA2005645EA /* SwiftHelpers */; };
 		D0B743832AEEDA3C00098286 /* VersionRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B743822AEEDA3C00098286 /* VersionRowView.swift */; };
 /* End PBXBuildFile section */
 
@@ -76,10 +76,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0AB18282AF009F300A02B17 /* Collections in Frameworks */,
-				D05A07092AEE493700F87741 /* SwiftHelpers in Frameworks */,
-				D0AB182C2AF009F300A02B17 /* OrderedCollections in Frameworks */,
-				D0AB182A2AF009F300A02B17 /* DequeModule in Frameworks */,
+				D09BE1FF2B2B5DA2005645EA /* SwiftHelpers in Frameworks */,
+				D09BE1F82B2B5D61005645EA /* Collections in Frameworks */,
+				D09BE1FA2B2B5D61005645EA /* DequeModule in Frameworks */,
+				D09BE1FC2B2B5D61005645EA /* OrderedCollections in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -107,6 +107,7 @@
 				D05A06E52AEE477E00F87741 /* DeviceManagerTests */,
 				D05A06EF2AEE477E00F87741 /* DeviceManagerUITests */,
 				D05A06D22AEE477C00F87741 /* Products */,
+				D09BE1FD2B2B5DA2005645EA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -263,6 +264,13 @@
 			path = AboutThisDevice;
 			sourceTree = "<group>";
 		};
+		D09BE1FD2B2B5DA2005645EA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -280,10 +288,10 @@
 			);
 			name = DeviceManager;
 			packageProductDependencies = (
-				D05A07082AEE493700F87741 /* SwiftHelpers */,
-				D0AB18272AF009F300A02B17 /* Collections */,
-				D0AB18292AF009F300A02B17 /* DequeModule */,
-				D0AB182B2AF009F300A02B17 /* OrderedCollections */,
+				D09BE1F72B2B5D61005645EA /* Collections */,
+				D09BE1F92B2B5D61005645EA /* DequeModule */,
+				D09BE1FB2B2B5D61005645EA /* OrderedCollections */,
+				D09BE1FE2B2B5DA2005645EA /* SwiftHelpers */,
 			);
 			productName = DeviceManager;
 			productReference = D05A06D12AEE477C00F87741 /* DeviceManager.app */;
@@ -333,7 +341,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1500;
-				LastUpgradeCheck = 1500;
+				LastUpgradeCheck = 1510;
 				TargetAttributes = {
 					D05A06D02AEE477C00F87741 = {
 						CreatedOnToolsVersion = 15.0.1;
@@ -358,8 +366,8 @@
 			);
 			mainGroup = D05A06C82AEE477C00F87741;
 			packageReferences = (
-				D05A07072AEE493600F87741 /* XCRemoteSwiftPackageReference "SwiftHelpers" */,
-				D0AB18262AF0094700A02B17 /* XCRemoteSwiftPackageReference "swift-collections" */,
+				D09BE1F52B2B53FF005645EA /* XCRemoteSwiftPackageReference "SwiftHelpers" */,
+				D09BE1F62B2B5D61005645EA /* XCRemoteSwiftPackageReference "swift-collections" */,
 			);
 			productRefGroup = D05A06D22AEE477C00F87741 /* Products */;
 			projectDirPath = "";
@@ -485,6 +493,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -546,6 +555,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -573,6 +583,7 @@
 				CODE_SIGN_ENTITLEMENTS = DeviceManager/Entitlements/DeviceManager.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"DeviceManager/Preview Content\"";
 				DEVELOPMENT_TEAM = 23JEQ2524P;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -611,6 +622,7 @@
 				CODE_SIGN_ENTITLEMENTS = DeviceManager/Entitlements/DeviceManager.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"DeviceManager/Preview Content\"";
 				DEVELOPMENT_TEAM = 23JEQ2524P;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -648,6 +660,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 23JEQ2524P;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -671,6 +684,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 23JEQ2524P;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -693,6 +707,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 23JEQ2524P;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -715,6 +730,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_TEAM = 23JEQ2524P;
 				GENERATE_INFOPLIST_FILE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
@@ -773,15 +789,15 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		D05A07072AEE493600F87741 /* XCRemoteSwiftPackageReference "SwiftHelpers" */ = {
+		D09BE1F52B2B53FF005645EA /* XCRemoteSwiftPackageReference "SwiftHelpers" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/leoho0722/SwiftHelpers.git";
 			requirement = {
 				kind = upToNextMajorVersion;
-				minimumVersion = 0.0.4;
+				minimumVersion = 0.0.10;
 			};
 		};
-		D0AB18262AF0094700A02B17 /* XCRemoteSwiftPackageReference "swift-collections" */ = {
+		D09BE1F62B2B5D61005645EA /* XCRemoteSwiftPackageReference "swift-collections" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/apple/swift-collections.git";
 			requirement = {
@@ -792,25 +808,25 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		D05A07082AEE493700F87741 /* SwiftHelpers */ = {
+		D09BE1F72B2B5D61005645EA /* Collections */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = D05A07072AEE493600F87741 /* XCRemoteSwiftPackageReference "SwiftHelpers" */;
-			productName = SwiftHelpers;
-		};
-		D0AB18272AF009F300A02B17 /* Collections */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = D0AB18262AF0094700A02B17 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			package = D09BE1F62B2B5D61005645EA /* XCRemoteSwiftPackageReference "swift-collections" */;
 			productName = Collections;
 		};
-		D0AB18292AF009F300A02B17 /* DequeModule */ = {
+		D09BE1F92B2B5D61005645EA /* DequeModule */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = D0AB18262AF0094700A02B17 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			package = D09BE1F62B2B5D61005645EA /* XCRemoteSwiftPackageReference "swift-collections" */;
 			productName = DequeModule;
 		};
-		D0AB182B2AF009F300A02B17 /* OrderedCollections */ = {
+		D09BE1FB2B2B5D61005645EA /* OrderedCollections */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = D0AB18262AF0094700A02B17 /* XCRemoteSwiftPackageReference "swift-collections" */;
+			package = D09BE1F62B2B5D61005645EA /* XCRemoteSwiftPackageReference "swift-collections" */;
 			productName = OrderedCollections;
+		};
+		D09BE1FE2B2B5DA2005645EA /* SwiftHelpers */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D09BE1F52B2B53FF005645EA /* XCRemoteSwiftPackageReference "SwiftHelpers" */;
+			productName = SwiftHelpers;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
