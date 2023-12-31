@@ -72,7 +72,7 @@ private extension DeviceManager {
     ///
     /// - Returns: ``Version``
     func getLatestVersion() -> Version {
-        let os = UIDevice.current.systemName
+        let os = AppDefine.os
         
         if deviceInfo.firmwares.isEmpty {
             return Version(device: self.device,
@@ -100,8 +100,8 @@ private extension DeviceManager {
     ///
     /// - Returns: ``Version``
     func getCurrentVersion() -> Version {
-        let os = UIDevice.current.systemName
-        let version = UIDevice.current.systemVersion
+        let os = AppDefine.os
+        let version = AppDefine.currentVersion
         
         if deviceInfo.firmwares.isEmpty {
             return Version(device: self.device,

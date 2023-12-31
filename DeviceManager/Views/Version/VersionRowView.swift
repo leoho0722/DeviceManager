@@ -5,9 +5,8 @@
 //  Created by Leo Ho on 2023/10/30.
 //
 
-import SwiftUI
-
 import SwiftHelpers
+import SwiftUI
 
 struct VersionRowView: View {
     
@@ -17,7 +16,7 @@ struct VersionRowView: View {
     
     var body: some View {
         HStack {
-            Text("\(UIDevice.current.systemName) \(firmware.version) (\(firmware.buildid))")
+            Text("\(AppDefine.os) \(firmware.version) (\(firmware.buildid))")
             Image(symbols: signed ? .checkmarkSealFill : .xmarkSealFill)
                 .foregroundStyle(signed ? .green : .red)
         }

@@ -5,15 +5,12 @@
 //  Created by Leo Ho on 2023/10/29.
 //
 
-import SwiftUI
-
 import SwiftHelpers
+import SwiftUI
 
 struct VersionDetailView: View {
     
     let firmware: DevicesInformation.Firmware
-    
-    let os = UIDevice.current.systemName
     
     private var vm: VersionDetailViewViewModel
     
@@ -30,8 +27,8 @@ struct VersionDetailView: View {
                 .clipShape(.rect(cornerRadius: 30))
                 .padding()
             Form {
-                Text("Version: " + os + " " + firmware.version + " (\(firmware.buildid))")
-                Text("Release Date: \(vm.format(date: firmware.releasedate))")
+                Text("Version: " + AppDefine.os + " " + firmware.version + " (\(firmware.buildid))")
+                Text("Release Date: \(AppUtilities.format(date: firmware.releasedate))")
                 HStack {
                     Text("Signed State: \(firmware.signed ? "Signed" : "Unsigned")")
                     Image(symbols: firmware.signed ? .checkmarkSealFill : .xmarkSealFill)

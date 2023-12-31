@@ -5,10 +5,9 @@
 //  Created by Leo Ho on 2023/10/29.
 //
 
-import SwiftUI
-
 import Collections
 import SwiftHelpers
+import SwiftUI
 
 struct VersionView: View {
     
@@ -33,7 +32,7 @@ struct VersionView: View {
             }
         }
         .task {
-            await vm.getDevices(identifier: "iPhone12,8")
+            await vm.getDevices(identifier: "iPhone15,5")
         }
     }
 }
@@ -49,10 +48,31 @@ private extension VersionView {
     @ViewBuilder
     func buildAboutThisDeviceSection(manager: DeviceManager) -> some View {
         Section {
-            NavigationLink {
-                AboutThisDeviceView(manager: manager)
-            } label: {
+            VStack {
                 Text("\(manager.device.name)")
+                    .font(.bold(.title)())
+                
+                HStack {
+                    VersionCubeView(display: .current, manager: manager)
+                        .frame(minWidth: 0, maxWidth: .infinity)
+                    
+                    VersionCubeView(display: .latest, manager: manager)
+                        .frame(minWidth: 0, maxWidth: .infinity)
+                }
+                
+                if !vm.isSameVersion {
+                    VStack {
+                        Label("Currently it is not the latest version of the system",
+                              symbols: .exclamationmarkTriangleFill)
+                        .foregroundStyle(.red)
+                        
+                        Button("Go to update") {
+                            AppUtilities.openURL(type: .settings(.softwareUpdate))
+                        }
+                        .frame(minWidth: 0, maxWidth: .infinity)
+                        .buttonStyle(.borderedProminent)
+                    }
+                }
             }
         } header: {
             Text("About this device")
@@ -60,7 +80,8 @@ private extension VersionView {
     }
     
     @ViewBuilder
-    func buildVersionSection(firmwares: OrderedDictionary<String, [DevicesInformation.Firmware]>, signed: Bool) -> some View {
+    func buildVersionSection(firmwares: OrderedDictionary<String, [DevicesInformation.Firmware]>,
+                             signed: Bool) -> some View {
         Section(signed ? "Signed Version" : "Unsigned Version") {
             ForEach(firmwares.keys, id: \.self) { version in
                 DisclosureGroup(version) {

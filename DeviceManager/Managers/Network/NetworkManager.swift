@@ -6,7 +6,6 @@
 //
 
 import Foundation
-
 import SwiftHelpers
 
 final class NetworkManager: NSObject {

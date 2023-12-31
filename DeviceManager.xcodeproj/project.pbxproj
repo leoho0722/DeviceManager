@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D00FCCF92B419ADC004CB56E /* VersionCubeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00FCCF82B419ADC004CB56E /* VersionCubeView.swift */; };
+		D00FCCFB2B41A37F004CB56E /* VersionCubeViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00FCCFA2B41A37F004CB56E /* VersionCubeViewViewModel.swift */; };
+		D00FCCFD2B41A6F4004CB56E /* Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00FCCFC2B41A6F4004CB56E /* Version.swift */; };
+		D00FCCFF2B41A716004CB56E /* AppUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00FCCFE2B41A716004CB56E /* AppUtilities.swift */; };
+		D00FCD022B41ABAF004CB56E /* AppDefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = D00FCD012B41ABAF004CB56E /* AppDefine.swift */; };
 		D05A06D52AEE477C00F87741 /* DeviceManagerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05A06D42AEE477C00F87741 /* DeviceManagerApp.swift */; };
 		D05A06D72AEE477C00F87741 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05A06D62AEE477C00F87741 /* HomeView.swift */; };
 		D05A06D92AEE477E00F87741 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D05A06D82AEE477E00F87741 /* Assets.xcassets */; };
@@ -21,8 +26,6 @@
 		D05A07172AEE80D700F87741 /* VersionViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05A07162AEE80D700F87741 /* VersionViewViewModel.swift */; };
 		D05A07192AEEA8B800F87741 /* VersionDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05A07182AEEA8B800F87741 /* VersionDetailView.swift */; };
 		D05A071B2AEEAD1600F87741 /* VersionDetailViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05A071A2AEEAD1600F87741 /* VersionDetailViewViewModel.swift */; };
-		D082F7D22B171F2F006753D7 /* AboutThisDeviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D082F7D12B171F2F006753D7 /* AboutThisDeviceView.swift */; };
-		D082F7D52B172624006753D7 /* AboutThisDeviceViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D082F7D42B172624006753D7 /* AboutThisDeviceViewViewModel.swift */; };
 		D09BE1F82B2B5D61005645EA /* Collections in Frameworks */ = {isa = PBXBuildFile; productRef = D09BE1F72B2B5D61005645EA /* Collections */; };
 		D09BE1FA2B2B5D61005645EA /* DequeModule in Frameworks */ = {isa = PBXBuildFile; productRef = D09BE1F92B2B5D61005645EA /* DequeModule */; };
 		D09BE1FC2B2B5D61005645EA /* OrderedCollections in Frameworks */ = {isa = PBXBuildFile; productRef = D09BE1FB2B2B5D61005645EA /* OrderedCollections */; };
@@ -48,6 +51,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D00FCCF82B419ADC004CB56E /* VersionCubeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionCubeView.swift; sourceTree = "<group>"; };
+		D00FCCFA2B41A37F004CB56E /* VersionCubeViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionCubeViewViewModel.swift; sourceTree = "<group>"; };
+		D00FCCFC2B41A6F4004CB56E /* Version.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Version.swift; sourceTree = "<group>"; };
+		D00FCCFE2B41A716004CB56E /* AppUtilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppUtilities.swift; sourceTree = "<group>"; };
+		D00FCD012B41ABAF004CB56E /* AppDefine.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDefine.swift; sourceTree = "<group>"; };
 		D05A06D12AEE477C00F87741 /* DeviceManager.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DeviceManager.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D05A06D42AEE477C00F87741 /* DeviceManagerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceManagerApp.swift; sourceTree = "<group>"; };
 		D05A06D62AEE477C00F87741 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
@@ -66,8 +74,6 @@
 		D05A07162AEE80D700F87741 /* VersionViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionViewViewModel.swift; sourceTree = "<group>"; };
 		D05A07182AEEA8B800F87741 /* VersionDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionDetailView.swift; sourceTree = "<group>"; };
 		D05A071A2AEEAD1600F87741 /* VersionDetailViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionDetailViewViewModel.swift; sourceTree = "<group>"; };
-		D082F7D12B171F2F006753D7 /* AboutThisDeviceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutThisDeviceView.swift; sourceTree = "<group>"; };
-		D082F7D42B172624006753D7 /* AboutThisDeviceViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutThisDeviceViewViewModel.swift; sourceTree = "<group>"; };
 		D0B743822AEEDA3C00098286 /* VersionRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VersionRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -100,6 +106,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D00FCD002B41AB74004CB56E /* API */ = {
+			isa = PBXGroup;
+			children = (
+				D05A070B2AEE4F4B00F87741 /* DevicesInformation.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
 		D05A06C82AEE477C00F87741 = {
 			isa = PBXGroup;
 			children = (
@@ -164,7 +178,9 @@
 		D05A06FF2AEE47C400F87741 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				D05A070B2AEE4F4B00F87741 /* DevicesInformation.swift */,
+				D00FCD012B41ABAF004CB56E /* AppDefine.swift */,
+				D00FCCFE2B41A716004CB56E /* AppUtilities.swift */,
+				D00FCCFC2B41A6F4004CB56E /* Version.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -172,7 +188,6 @@
 		D05A07002AEE47CB00F87741 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				D082F7D02B171F18006753D7 /* AboutThisDevice */,
 				D05A07122AEE806E00F87741 /* Version */,
 				D05A06D62AEE477C00F87741 /* HomeView.swift */,
 			);
@@ -182,7 +197,6 @@
 		D05A07012AEE47D200F87741 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
-				D082F7D32B17260B006753D7 /* AboutThisDevice */,
 				D05A07152AEE80BE00F87741 /* Version */,
 			);
 			path = ViewModels;
@@ -216,6 +230,7 @@
 		D05A070A2AEE4AE900F87741 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				D00FCD002B41AB74004CB56E /* API */,
 				D05A07052AEE488300F87741 /* NetworkManager.swift */,
 			);
 			path = Network;
@@ -224,9 +239,10 @@
 		D05A07122AEE806E00F87741 /* Version */ = {
 			isa = PBXGroup;
 			children = (
-				D05A07132AEE809700F87741 /* VersionView.swift */,
+				D00FCCF82B419ADC004CB56E /* VersionCubeView.swift */,
 				D05A07182AEEA8B800F87741 /* VersionDetailView.swift */,
 				D0B743822AEEDA3C00098286 /* VersionRowView.swift */,
+				D05A07132AEE809700F87741 /* VersionView.swift */,
 			);
 			path = Version;
 			sourceTree = "<group>";
@@ -234,8 +250,9 @@
 		D05A07152AEE80BE00F87741 /* Version */ = {
 			isa = PBXGroup;
 			children = (
-				D05A07162AEE80D700F87741 /* VersionViewViewModel.swift */,
+				D00FCCFA2B41A37F004CB56E /* VersionCubeViewViewModel.swift */,
 				D05A071A2AEEAD1600F87741 /* VersionDetailViewViewModel.swift */,
+				D05A07162AEE80D700F87741 /* VersionViewViewModel.swift */,
 			);
 			path = Version;
 			sourceTree = "<group>";
@@ -246,22 +263,6 @@
 				D05A07102AEE5AE800F87741 /* DeviceManager.swift */,
 			);
 			path = Device;
-			sourceTree = "<group>";
-		};
-		D082F7D02B171F18006753D7 /* AboutThisDevice */ = {
-			isa = PBXGroup;
-			children = (
-				D082F7D12B171F2F006753D7 /* AboutThisDeviceView.swift */,
-			);
-			path = AboutThisDevice;
-			sourceTree = "<group>";
-		};
-		D082F7D32B17260B006753D7 /* AboutThisDevice */ = {
-			isa = PBXGroup;
-			children = (
-				D082F7D42B172624006753D7 /* AboutThisDeviceViewViewModel.swift */,
-			);
-			path = AboutThisDevice;
 			sourceTree = "<group>";
 		};
 		D09BE1FD2B2B5DA2005645EA /* Frameworks */ = {
@@ -416,13 +417,16 @@
 				D05A07172AEE80D700F87741 /* VersionViewViewModel.swift in Sources */,
 				D05A071B2AEEAD1600F87741 /* VersionDetailViewViewModel.swift in Sources */,
 				D05A070C2AEE4F4B00F87741 /* DevicesInformation.swift in Sources */,
-				D082F7D22B171F2F006753D7 /* AboutThisDeviceView.swift in Sources */,
+				D00FCD022B41ABAF004CB56E /* AppDefine.swift in Sources */,
+				D00FCCFD2B41A6F4004CB56E /* Version.swift in Sources */,
 				D05A07062AEE488300F87741 /* NetworkManager.swift in Sources */,
-				D082F7D52B172624006753D7 /* AboutThisDeviceViewViewModel.swift in Sources */,
 				D0B743832AEEDA3C00098286 /* VersionRowView.swift in Sources */,
 				D05A06D72AEE477C00F87741 /* HomeView.swift in Sources */,
 				D05A06D52AEE477C00F87741 /* DeviceManagerApp.swift in Sources */,
+				D00FCCFB2B41A37F004CB56E /* VersionCubeViewViewModel.swift in Sources */,
 				D05A07142AEE809700F87741 /* VersionView.swift in Sources */,
+				D00FCCFF2B41A716004CB56E /* AppUtilities.swift in Sources */,
+				D00FCCF92B419ADC004CB56E /* VersionCubeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -5,14 +5,21 @@
 //  Created by Leo Ho on 2023/10/29.
 //
 
-import SwiftUI
-
 import Collections
+import SwiftUI
 
 @Observable
 final class VersionViewViewModel {
     
     var deviceManager: DeviceManager?
+    
+    var isSameVersion: Bool {
+        guard let currentVersion = Double(AppDefine.currentVersion),
+              let latestVersion = Double(deviceManager!.latestVersion.version) else {
+            return false
+        }
+        return latestVersion.isEqual(to: currentVersion)
+    }
     
     private var signed: [DevicesInformation.Firmware] = []
     var signedFirmwares: OrderedDictionary<String, [DevicesInformation.Firmware]> = [:]
@@ -66,8 +73,6 @@ final class VersionViewViewModel {
         if !ios17.isEmpty {
             versionDict.updateValue(ios17, forKey: "iOS 17")
         }
-        
-//        print(versionDict)
         
         return versionDict
     }
